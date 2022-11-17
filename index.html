@@ -6,10 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon-16x16.png">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Confeitaria</title>
 </head>
 <body>
-    
+    <div class="main">
+        <!-- Cabeçalho -->
+        <header id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 sm-12" id="log">
+                        <img src="./img/logo.png" alt="logo">       
+                    </div>
+                    <div class="col-6 sm-12" id="navg">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link active">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#saiba-mais">Saiba mais</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+                        </ul>             
+                    </div>
+                    <div class="row" id="info">
+                        <div class="col-md-12 col-sm-12" >
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/ingredientes.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-caption">
+                                            <h5 class="col-3" id="colorBox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/dicas-de-confeitaria.jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-caption">
+                                            <h5 class="col-3" id="colorBox">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                    </div>   
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/Confeitaria (1).jpg" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-caption">
+                                            <h5 class="col-3 float-end" id="colorBox">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
     <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
