@@ -15,6 +15,12 @@ body {
     background-color: rgba(255, 162, 178, 0.9);
 }
 
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Cabeçalho */
 #log, #navg {
     padding: 15px;
 }
@@ -44,3 +50,64 @@ nav  {
 .nav a:hover {
     color: white;
 }
+
+#info {
+    text-align: center;
+    font-family: cursive;
+    color: red;
+}
+
+#colorBox {
+    background-color: #fff;
+    color: #e7304f;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+/* Produtos */
+#products {
+    background-color: #e7304f;
+    text-align: center;
+}
+
+#products h2 {
+    color: pink;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.card {
+    width: 31%;
+    float: left;
+    margin: 5px;
+}
+
+.card h5, p {
+    color: #e7304f;
+    font-family: cursive;
+}
+
+.modal-body td {
+    padding-right: 50px;
+}
+
+/* Saiba mais */
+#more-title {
+    text-align: center;
+    color: rgb(139, 0, 0);
+    margin-bottom: 3rem;
+}
+
+.navegacao img {
+    padding-left: 5px;
+    padding-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color:rgb(139, 0, 0);
+}
+
+/* Sobre */
+

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon-16x16.png">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Confeitaria</title>
 </head>
@@ -69,8 +70,280 @@
                 </div>
             </div>
         </header>
+        
+        <!-- Produtos -->
+        <section id="products">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Produtos em destaque</h2>
+                        <div class="card">
+                            <img src="./img/bolo.jpg" alt="bolo">
+                            <div class="card-body">
+                                <h5 class="card-title">Bolos</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/cupcake.jpg" alt="cupcake">
+                            <div class="card-body">
+                                <h5 class="card-title">Cup-Cakes</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/torta.jpg" alt="torta">
+                            <div class="card-body">
+                                <h5 class="card-title">Tortas</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/docinhos.jpg" alt="doces">
+                            <div class="card-body">
+                                <h5 class="card-title">Docinhos</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-4">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/banoff (1).jpg" alt="banoff">
+                            <div class="card-body">
+                                <h5 class="card-title">Banoffee</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-5">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/donuts.jpg" alt="donuts">
+                            <div class="card-body">
+                                <h5 class="card-title">Donuts</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum minus eius cum quia voluptatum nulla sequi hic dolorem, asperiores, doloremque culpa distinctio natus, nisi omnis fugiat nesciunt similique aspernatur adipisci.</p>
+                                <a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-6">Ver produto</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bolo</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Preço 1kg</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <td>Bolo de morango</td>
+                                <td>R$ 39,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bolo de chocolate</td>
+                                <td>R$ 44,00</td>
+                            </tr>
+                            <tr>
+                                <td>Bolo de baunilha</td>
+                                <td>R$ 35,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cup Cakes</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os tamanhos e os preços</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                            <tr>
+                                <td>Copo pequeno</td>
+                                <td>R$ 3,00</td>
+                            </tr>
+                            <tr>
+                                <td>Copo médio</td>
+                                <td>R$ 5,00</td>
+                            </tr>
+                            <tr>
+                                <td>Copo grande</td>
+                                <td>R$ 8,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Tortas</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Unidade</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <td>Torta de morango</td>
+                                <td>R$ 35,00</td>
+                            </tr>
+                            <tr>
+                                <td>Torta de maracujá</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Torta de limão</td>
+                                <td>R$ 25,00</td>
+                            </tr> 
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Docinhos</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os preços</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <td>50 und</td>
+                                <td>R$ 80,00</td>
+                            </tr>
+                            <tr>
+                                <td>100 und</td>
+                                <td>R$ 150,00</td>
+                            </tr>
+                            <tr>
+                                <td>200 und</td>
+                                <td>R$ 290,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-5">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Banoffee</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Preço por kg</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <td>1 kg</td>
+                                <td>R$ 40,00</td>
+                            </tr>
+                            <tr>
+                                <td>3 kg</td>
+                                <td>R$ 110,00</td>
+                            </tr>
+                            <tr>
+                                <td>5 kg</td>
+                                <td>R$ 180,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal-6">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Donuts</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Unidade</h6>
+                        <table class="table-hover">
+                            <tr>
+                                <td>Morango</td>
+                                <td>R$ 5,00</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>R$ 5,00</td>
+                            </tr>
+                            <tr>
+                                <td>Creme</td>
+                                <td>R$ 3,00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Saiba mais -->
+        <section id="more">
+            <div class="container">
+                <div class="row" id="more-title">
+                    <div class="col">
+                        <h1>Para saber mais</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="navegacao col-md-6 sm-12">
+                        <h3>Confira nossas mídias sociais</h3>
+                        <nav><a href=""><img src="./img/facebook.png" alt="facebook"></a></nav>
+                        <nav><a href=""><img src="./img/instagram.png" alt="instagram"></a></nav>
+                        <nav><a href=""><img src="./img/youtube.png" alt="youtube"></a></nav>
+                        <nav><a href=""><img src="./img/twitter.png" alt="twitter"></a></nav>
+                    </div>
+                    <div class="navegacao col-md-6 sm-12">
+                        <h3>Ou entre em contato</h3>
+                        <nav><a href=""><img src="./img/telefone-fixo.png" alt="telefone"></a></nav>
+                        <nav><a href=""><img src="./img/whatsapp.png" alt="whatsapp"></a></nav>
+                        <nav><a href=""><img src="./img/email2.png" alt="e-mail"></a></nav>
+                        <a class="btn btn-danger">Quero encomendar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre -->
+        
+        
     </div>
-
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
