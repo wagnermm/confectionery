@@ -98,6 +98,10 @@ nav  {
     margin-bottom: 3rem;
 }
 
+#more h3 {
+    color:rgb(139, 0, 0);
+}
+
 .navegacao img {
     padding-left: 5px;
     padding-right: 25px;
@@ -105,9 +109,17 @@ nav  {
     margin-bottom: 30px;
 }
 
-h3 {
-    color:rgb(139, 0, 0);
+/* Sobre */
+#about {
+    background-color: #e7304f;
+    color: pink;
+    padding: 2rem;
 }
 
-/* Sobre */
+#about-text {
+    text-align: center;
+}
 
+#about-text p {
+    color: darkred;
+}

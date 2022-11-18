@@ -11,8 +11,10 @@
 - CSS3
 - JS
 - Bootstrap
+- Fontawesome
 
 ### Referências
 - https://getbootstrap.com/docs/5.2/components/buttons/#button-tags
 - https://getbootstrap.com/docs/5.2/components/card/#about
 - https://getbootstrap.com/docs/5.2/components/carousel/#how-it-works
+- https://fontawesome.com/
