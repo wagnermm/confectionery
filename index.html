@@ -335,7 +335,7 @@
                         <nav><a href=""><img src="./img/telefone-fixo.png" alt="telefone"></a></nav>
                         <nav><a href=""><img src="./img/whatsapp.png" alt="whatsapp"></a></nav>
                         <nav><a href=""><img src="./img/email2.png" alt="e-mail"></a></nav>
-                        <a class="btn btn-danger">Quero encomendar</a>
+                        <a class="btn btn-danger" href="#contact">Quero encomendar</a>
                     </div>
                 </div>
             </div>
@@ -355,11 +355,62 @@
                     <p>Nossos ingredientes são especialmente selecionados e preparados para a melhor satisfação de nossos clientes.</p>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-</section>
-</div>
-<script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./libs/fontawesome/js/all.min.js"></script>
+    <div class="rodape">
+        <!-- Contato -->
+        <section id="contact">
+            <div class="container">
+                <div class="mensagem">
+                    <div class="telaMensagem">
+                    </div>
+                </div>
+                <p>Gostou? Preencha o formulário e faça já seu pedido.</p>
+                <form class="form">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="nome" placeholder="digite o seu nome" id="obrigatorio-1" onchange="disableButton()">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="telefone" placeholder="digite o seu telefone" id="obrigatorio-2" onkeypress="return event.charCode >= 48 && event.charCode <= 57" onchange="disableButton()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mensagem-email"></div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="digite o seu e-mail" id="obrigatorio-3" onchange="disableButton()">
+                            </div>
+                           
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="endereço" placeholder="digite o seu endereço" id="obrigatorio-4" onchange="disableButton()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <textarea class="form-control" rows="5" placeholder="descrição do pedido"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-lg btn-secondary" id="btn" disabled>Pedir online</button>
+                    </div>
+                </form>
+                
+            </div>
+        </section>
+        <div class="top">
+            <a href="#top">Voltar ao topo</a>
+        </div>
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/fontawesome/js/all.min.js"></script>
 </body>
 </html>

@@ -123,3 +123,165 @@ nav  {
 #about-text p {
     color: darkred;
 }
+
+/* Contato e formulário*/
+.rodape {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 1%;
+    background-color: rgba(63, 8, 17, 0.9);
+    color: white;
+}
+
+.telaMensagem, .mensagem-email {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: center;
+    height: auto;
+    width: 300px;
+    background-color: white;
+    color: red;
+    font-weight: 600px;
+    border-radius: 8px;
+}
+
+.mensagem {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.botao {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+button:disabled {
+    opacity: .4;
+    cursor: default;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.top {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.top a {
+    text-decoration: none;
+    color: white;
+}
+
+.erro {
+    border-color: #f00;
+}
+
+@media(max-width: 480px) {
+    body {
+        min-width:320px;
+    }
+
+    .main {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .rodape {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #btn {
+        font-size: 15px;
+    }
+
+    #log {
+        margin: 10px 10px;
+    }
+
+    .card {
+        width: 98% !important;
+        float: left;
+    }
+
+    .card p {
+        font-size: 14px !important;
+    }
+
+    .col {
+        flex: auto;
+    }
+
+    .telaMensagem {
+        width: 100%;
+    }
+
+    .mensagem-email {
+        width: 100% !important;
+    }
+}
+
+
+/* Responsivo */
+@media(max-width: 768px) {
+    body {
+        min-width: 481px;
+    }
+
+    .main {
+        width: 90%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .rodape {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #btn {
+        font-size: 15px;
+    }
+
+    #log {
+        margin: 10px 10px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .card {
+        width: 47%;
+        float: left;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+    }
+
+    .telaMensagem {
+        width: 100%;
+    }
+
+    .mensagem-email {
+        width: 190px;
+    }
+}
