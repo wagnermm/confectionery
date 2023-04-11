@@ -21,13 +21,13 @@ section {
 }
 
 /* Cabeçalho */
-#log, #navg {
-    padding: 15px;
+.headerRow {
+    padding: 20px;
 }
 
-#log img {
+.headerRow img {
     border-radius: 100%;
-    height: 250px;
+    height: 200px;
     border: 1px solid darkred;
 }
 
@@ -49,19 +49,6 @@ nav  {
 
 .nav a:hover {
     color: white;
-}
-
-#info {
-    text-align: center;
-    font-family: cursive;
-    color: red;
-}
-
-#colorBox {
-    background-color: #fff;
-    color: #e7304f;
-    border-radius: 20px;
-    box-shadow: 2px 2px 4px black;
 }
 
 /* Produtos */
@@ -186,6 +173,7 @@ textarea {
 @media(max-width: 480px) {
     body {
         min-width:320px;
+        overflow-x: hidden;
     }
 
     .main {
@@ -193,6 +181,15 @@ textarea {
         text-align: center;
         align-items: center;
         overflow: hidden;
+    }
+
+    .headerRow {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .nav a {
+        font-size: 15px;
     }
 
     .rodape {
@@ -204,10 +201,6 @@ textarea {
 
     #btn {
         font-size: 15px;
-    }
-
-    #log {
-        margin: 10px 10px;
     }
 
     .card {
@@ -245,6 +238,24 @@ textarea {
         overflow: hidden;
     }
 
+    .headerRow {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+    ul {
+        margin-left: 4rem;
+    }
+
+    .carousel-inner {
+        width: 520px;
+        margin-bottom: 1rem;
+    }
+
     .rodape {
         width: 90%;
         text-align: center;
@@ -254,10 +265,6 @@ textarea {
 
     #btn {
         font-size: 15px;
-    }
-
-    #log {
-        margin: 10px 10px;
     }
 
     .col-sm-12 {
