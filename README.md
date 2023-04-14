@@ -1,19 +1,19 @@
-## Web-page bootstrap 
+## Web-page in bootstrap 
 
-### Descrição
+### Description
 
-- Uma confeitaria (fictícia) estruturada a partir do bootstrap, com o intuito de ajudar iniciantes a praticar.
-- A web-page terá seções com cards para exibir os produtos e um carousel com imagens da empresa.
-- No rodapé teremos um formulário e validado em js.
+- A (fictional) confectionery structured from the bootstrap, in order to help beginners practice.
+- The web-page will have sections with cards to display the products and a carousel with images of the company.
+- In the footer we will have a form and validated in js.
 
-### Tecnologias utilizadas:
+### Technologies used:
 - HTML5
 - CSS3
 - JS
 - Bootstrap
 - Fontawesome
 
-### Referências
+### References
 - https://getbootstrap.com/docs/5.2/components/buttons/#button-tags
 - https://getbootstrap.com/docs/5.2/components/card/#about
 - https://getbootstrap.com/docs/5.2/components/carousel/#how-it-works
