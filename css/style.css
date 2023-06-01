@@ -69,7 +69,7 @@ nav  {
 }
 
 #products h2 {
-    color: pink;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -108,12 +108,19 @@ nav  {
 /* Sobre */
 #about {
     background-color: #e7304f;
-    color: pink;
+    color: #fff;
     padding: 2rem;
 }
 
-#about-text {
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+#about-info {
+    width: 70%;
 }
 
 #about-text h1, p {
@@ -128,6 +135,12 @@ nav  {
     margin-right: 1%;
     background-color: rgba(63, 8, 17, 0.9);
     color: white;
+}
+
+.rodape-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 .telaMensagem, .mensagem-email {
