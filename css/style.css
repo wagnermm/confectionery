@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -32,30 +31,43 @@ section {
 .headerRow img {
     border-radius: 100%;
     height: 200px;
-    border: 1px solid darkred;
+    border: 1px solid #8b0000;
 }
 
-li {
+.nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-item {
     background-color: #e7304f;
-    border: 1px solid pink;
+    border: 1px solid #ffc0cb;
     border-radius: 5px;
 }
 
-li:hover {
+.nav-item:hover {
     background-color: #fa1f44;
 }
 
-nav  {
-    display: inline;
-}
-
-.nav a {
+.nav-link {
     font-size: 20px;
     color: pink;
 }
 
-.nav a:hover {
+.nav-link:hover {
     color: white;
+}
+
+/*Mobile*/
+
+.nav-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    cursor: pointer;
+    display: none;
 }
 
 .carousel img {
@@ -98,11 +110,33 @@ nav  {
     color:rgb(139, 0, 0);
 }
 
-.navegacao img {
+.navegacao  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.midias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.midias img {
     padding-left: 5px;
     padding-right: 25px;
     margin-top: 20px;
     margin-bottom: 30px;
+}
+.encomendar {
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.encomendar .btn {
+    width: 100px;
 }
 
 /* Sobre */
@@ -123,7 +157,7 @@ nav  {
     width: 70%;
 }
 
-#about-text h1, p {
+h1, p {
     color: darkred;
 }
 
@@ -210,10 +244,6 @@ textarea {
         padding: 0.5rem;
     }
 
-    .nav a {
-        font-size: 15px;
-    }
-
     .rodape {
         width: 90%;
         text-align: center;
@@ -263,14 +293,14 @@ textarea {
     .headerRow {
         width: 100%;
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .nav a {
-        font-size: 15px;
-    }
-
-    ul {
-        margin-left: 4rem;
+    .nav {
+        display: none;
     }
 
     .carousel-inner {
@@ -312,5 +342,41 @@ textarea {
 
     .mensagem-email {
         width: 190px;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .nav-mobile {
+        position: relative;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        visibility: hidden;
+    }
+
+    .nav-mobile li {
+        background-color: rgba(63, 8, 17, 0.9);
+        border: 1px solid #ffc0cb;
+        border-radius: 5px;
+        padding: 8px;
+        list-style: none;
+    }
+    
+    .nav-mobile a {
+        font-size: 20px;
+        color: pink;
+        text-decoration: none;
+    }
+    
+    .menu-mobile div {
+        width: 3rem;
+        height: 0.3rem;
+        margin: 0.2rem;
+        background:#fa1f44;
+        transition: 0.4s ease-in
     }
 }

@@ -1,3 +1,7 @@
+var menuBtn = document.querySelector('.menu-mobile').addEventListener('click', function menuActive() {
+    document.querySelector('.nav-mobile').style.visibility = "visible"
+})
+
 function validaNome(elemento){
 
     elemento.addEventListener('focusout', function(event) {
