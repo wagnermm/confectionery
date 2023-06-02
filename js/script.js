@@ -1,7 +1,21 @@
+/* Phone Contact */
+var phoneShow = document.querySelector('.phone').addEventListener('mouseover', function() {
+    document.querySelector('.phone-contact').style.visibility = "visible"
+})
+var phoneHide = document.querySelector('.phone').addEventListener('mouseout', function() {
+    document.querySelector('.phone-contact').style.visibility = "hidden"
+})
+
+
+/* Menu Mobile */
 var menuBtn = document.querySelector('.menu-mobile').addEventListener('click', function menuActive() {
     document.querySelector('.nav-mobile').style.visibility = "visible"
 })
+var close = document.querySelector('.close-menu').addEventListener('click', function menuClose() {
+    document.querySelector('.nav-mobile').style.visibility = "hidden"
+})
 
+/* Form Validate */
 function validaNome(elemento){
 
     elemento.addEventListener('focusout', function(event) {

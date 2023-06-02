@@ -24,13 +24,21 @@ section {
 }
 
 /* Cabeçalho */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .headerRow {
-    padding: 20px;
+    margin-bottom: 2rem;
 }
 
 .headerRow img {
+    margin-top: 1rem;
     border-radius: 100%;
-    height: 200px;
+    height: 180px;
     border: 1px solid #8b0000;
 }
 
@@ -60,7 +68,6 @@ section {
 }
 
 /*Mobile*/
-
 .nav-mobile {
     display: none;
 }
@@ -70,8 +77,19 @@ section {
     display: none;
 }
 
+/*Carousel*/
+#carouselExampleFade {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel img {
     border-radius: 8px;
+    border: 1px solid #8b0000;
 }
 
 /* Produtos */
@@ -129,6 +147,26 @@ section {
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.phone-contact {
+    visibility: hidden;
+    position: absolute;
+    right: 35vw;
+    background: rgb(139, 0, 0);
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    border: 1px solid #e7304f;
+    border-radius: 5px;
+    padding: 2px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    animation: toggle;
+}
+
 .encomendar {
     margin-top: 3rem;
     width: 100%;
@@ -244,6 +282,10 @@ textarea {
         padding: 0.5rem;
     }
 
+    #carouselExampleFade {
+        padding: 0;
+    }
+
     .rodape {
         width: 90%;
         text-align: center;
@@ -292,7 +334,7 @@ textarea {
 
     .headerRow {
         width: 100%;
-        padding: 1rem;
+        margin: 1rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -303,8 +345,8 @@ textarea {
         display: none;
     }
 
-    .carousel-inner {
-        width: 520px;
+    #carouselExampleFade {
+        padding: 0;
         margin-bottom: 1rem;
     }
 
@@ -349,7 +391,9 @@ textarea {
     }
 
     .nav-mobile {
-        position: relative;
+        position: absolute;
+        top: 7vh;
+        left: 0;
         width: 150px;
         display: flex;
         flex-direction: column;
@@ -378,5 +422,23 @@ textarea {
         margin: 0.2rem;
         background:#fa1f44;
         transition: 0.4s ease-in
+    }
+
+    .close-menu {
+        cursor: pointer;
+        color: #8b0000;
+        font-size: 30px;
+    }
+}
+
+@keyframes toggle {
+    0% {
+       visibility:hidden;
+    }
+    50% {
+        visibility:hidden;
+        }
+    100% {
+        visibility:visible;
     }
 }
