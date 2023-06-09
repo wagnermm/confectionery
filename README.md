@@ -10,6 +10,7 @@
 ### Technologies used:
 - HTML5
 - CSS3
+- SASS
 - JS
 - Bootstrap
 
