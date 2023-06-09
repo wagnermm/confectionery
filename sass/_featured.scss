@@ -1,0 +1,16 @@
+#products {
+    background-color: $bg-color-tertiary;
+    text-align: center;
+    h2 {
+        color: $text-color-tertiary;
+        font-weight: bold;
+    }
+    .card {
+        width: 31%;
+        float: left;
+        margin: 5px;
+        h5, p {
+            color: $bg-color-tertiary;
+        }
+    }
+}

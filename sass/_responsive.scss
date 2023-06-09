@@ -1,0 +1,140 @@
+@media(max-width: 480px) {
+    body {
+        min-width:320px;
+        overflow-x: hidden;
+        .main {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+            .headerRow {
+                width: 100%;
+                padding: 0.5rem;
+            }
+            #carouselExampleFade {
+                padding: 0;
+            }
+            .card {
+                width: 98% !important;
+                float: left;
+                p {
+                    font-size: 14px !important;
+                }
+            }
+        }
+        .rodape {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+            .telaMensagem {
+                width: 100%;
+            }
+        
+            .mensagem-email {
+                width: 100% !important;
+            }
+        }
+        #btn {
+            font-size: 15px;
+        }
+        .col {
+            flex: auto;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        min-width: 481px;
+        .main {
+            width: 90%;
+            text-align: center;
+            overflow: hidden;
+            .headerRow {
+                width: 100%;
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .nav {
+                    display: none;
+                }
+                .menu-mobile {
+                    display: block;
+                    div {
+                        width: 3rem;
+                        height: 0.3rem;
+                        margin: 0.2rem;
+                        background: $bg-color-hover;
+                        transition: 0.4s ease-in
+                    }
+                }
+            
+                .nav-mobile {
+                    position: absolute;
+                    top: 7vh;
+                    left: 0;
+                    width: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    visibility: hidden;
+                    li {
+                        background-color: $bg-color-secondary;
+                        border: 1px solid $text-color-secondary;
+                        border-radius: 5px;
+                        padding: 8px;
+                        list-style: none;
+                    }
+                    
+                    a {
+                        font-size: 20px;
+                        color: $text-color-secondary;
+                        text-decoration: none;
+                    }
+                    .close-menu {
+                        cursor: pointer;
+                        color: $text-color-primary;
+                        font-size: 30px;
+                    }
+                }
+            }
+            #carouselExampleFade {
+                padding: 0;
+                margin-bottom: 1rem;
+            }
+            .card {
+                width: 47%;
+                float: left;
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+        .rodape {
+            width: 90%;
+            text-align: center;
+            align-items: center;
+            overflow: hidden;
+            .telaMensagem {
+                width: 100%;
+            }
+        
+            .mensagem-email {
+                width: 190px;
+            }
+        }
+        #btn {
+            font-size: 15px;
+        }
+        .col-sm-6 {
+            width: 100%;
+        }
+        .col-sm-12 {
+            width: 100%;
+        }
+    }
+}

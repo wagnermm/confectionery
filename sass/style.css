@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(../img/morango.jpg);
+  font-family: "Oleo Script Swash Caps";
+  overflow-x: hidden;
+}
+body .main {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 1%;
+  background-color: rgba(255, 162, 178, 0.9019607843);
+}
+body .main .modal .modal-body td {
+  padding-right: 50px;
+}
+body section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+body .rodape {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 1%;
+  background-color: rgba(63, 8, 17, 0.9019607843);
+  color: white;
+}
+body .rodape .top {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+body .rodape .top a {
+  text-decoration: none;
+  color: white;
+}
+body .rodape .erro {
+  border-color: #f00;
+}
+
+@media (max-width: 480px) {
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+  }
+  body .main {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  body .main .headerRow {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  body .main #carouselExampleFade {
+    padding: 0;
+  }
+  body .main .card {
+    width: 98% !important;
+    float: left;
+  }
+  body .main .card p {
+    font-size: 14px !important;
+  }
+  body .rodape {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  body .rodape .telaMensagem {
+    width: 100%;
+  }
+  body .rodape .mensagem-email {
+    width: 100% !important;
+  }
+  body #btn {
+    font-size: 15px;
+  }
+  body .col {
+    flex: auto;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    min-width: 481px;
+  }
+  body .main {
+    width: 90%;
+    text-align: center;
+    overflow: hidden;
+  }
+  body .main .headerRow {
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .main .headerRow .nav {
+    display: none;
+  }
+  body .main .headerRow .menu-mobile {
+    display: block;
+  }
+  body .main .headerRow .menu-mobile div {
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0.2rem;
+    background: #fa1f44;
+    transition: 0.4s ease-in;
+  }
+  body .main .headerRow .nav-mobile {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+  }
+  body .main .headerRow .nav-mobile li {
+    background-color: rgba(63, 8, 17, 0.9019607843);
+    border: 1px solid #ffc0cb;
+    border-radius: 5px;
+    padding: 8px;
+    list-style: none;
+  }
+  body .main .headerRow .nav-mobile a {
+    font-size: 20px;
+    color: #ffc0cb;
+    text-decoration: none;
+  }
+  body .main .headerRow .nav-mobile .close-menu {
+    cursor: pointer;
+    color: #8b0000;
+    font-size: 30px;
+  }
+  body .main #carouselExampleFade {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  body .main .card {
+    width: 47%;
+    float: left;
+  }
+  body .main .card p {
+    font-size: 12px;
+  }
+  body .rodape {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  body .rodape .telaMensagem {
+    width: 100%;
+  }
+  body .rodape .mensagem-email {
+    width: 190px;
+  }
+  body #btn {
+    font-size: 15px;
+  }
+  body .col-sm-6 {
+    width: 100%;
+  }
+  body .col-sm-12 {
+    width: 100%;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .headerRow {
+  margin-bottom: 2rem;
+}
+.header .headerRow img {
+  margin-top: 1rem;
+  border-radius: 100%;
+  height: 180px;
+  border: 1px solid #8b0000;
+}
+.header .headerRow .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .headerRow .nav .nav-item {
+  background-color: #e7304f;
+  border: 1px solid #ffc0cb;
+  border-radius: 5px;
+}
+.header .headerRow .nav .nav-item:hover {
+  background-color: #fa1f44;
+}
+.header .headerRow .nav .nav-item .nav-link {
+  font-size: 20px;
+  color: #ffc0cb;
+}
+.header .headerRow .nav .nav-item .nav-link:hover {
+  color: white;
+}
+.header .headerRow .nav-mobile {
+  display: none;
+}
+.header .headerRow .menu-mobile {
+  cursor: pointer;
+  display: none;
+}
+.header #carouselExampleFade {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header #carouselExampleFade .carousel img {
+  border-radius: 8px;
+  border: 1px solid #8b0000;
+}
+
+#products {
+  background-color: #e7304f;
+  text-align: center;
+}
+#products h2 {
+  color: white;
+  font-weight: bold;
+}
+#products .card {
+  width: 31%;
+  float: left;
+  margin: 5px;
+}
+#products .card h5, #products .card p {
+  color: #e7304f;
+}
+
+#more #more-title {
+  text-align: center;
+  color: #8b0000;
+  margin-bottom: 3rem;
+}
+#more .navegacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#more .navegacao h3 {
+  color: #8b0000;
+}
+#more .navegacao .midias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#more .navegacao .midias img {
+  padding-left: 5px;
+  padding-right: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#more .navegacao .midias .phone-contact {
+  visibility: hidden;
+  position: absolute;
+  right: 35vw;
+  background: #8b0000;
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+  border: 1px solid #e7304f;
+  border-radius: 5px;
+  padding: 2px;
+  width: 200px;
+  height: 70px;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  animation: toggle;
+}
+#more .encomendar {
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+}
+#more .encomendar .btn {
+  width: 100px;
+}
+
+#about {
+  background-color: #e7304f;
+  color: white;
+  padding: 2rem;
+}
+#about #about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#about #about-container #about-info {
+  width: 70%;
+}
+#about #about-container #about-info h1, #about #about-container #about-info p {
+  color: #8b0000;
+}
+
+#contact .rodape-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#contact .mensagem {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+#contact .mensagem .telaMensagem {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: center;
+  height: auto;
+  width: 300px;
+  background-color: white;
+  color: #ff0000;
+  font-weight: 600px;
+  border-radius: 8px;
+}
+#contact .form .mensagem-email {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  text-align: center;
+  height: auto;
+  width: 300px;
+  background-color: white;
+  color: #ff0000;
+  font-weight: 600px;
+  border-radius: 8px;
+}
+#contact .form .botao {
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+#contact .form .botao:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+#contact .form input,
+#contact .form textarea {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */

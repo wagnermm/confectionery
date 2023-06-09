@@ -1,0 +1,49 @@
+#contact {
+    .rodape-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .mensagem {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        .telaMensagem {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: center;
+            height: auto;
+            width: 300px;
+            background-color: $text-color-tertiary;
+            color: #ff0000;
+            font-weight: 600px;
+            border-radius: 8px;
+        }
+    }
+    .form {
+        .mensagem-email {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: center;
+            height: auto;
+            width: 300px;
+            background-color: $text-color-tertiary;
+            color: #ff0000;
+            font-weight: 600px;
+            border-radius: 8px;
+        }
+        .botao {
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            &:disabled {
+                opacity: .4;
+                cursor: default;
+            }
+        }
+        input,
+        textarea {
+            margin-bottom: 1rem;
+        }
+    }
+}

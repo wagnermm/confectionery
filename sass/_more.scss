@@ -1,0 +1,53 @@
+#more {
+    #more-title {
+        text-align: center;
+        color: $text-color-primary;
+        margin-bottom: 3rem;
+    }
+    .navegacao  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            color: $text-color-primary;
+        }
+        .midias {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img {
+                padding-left: 5px;
+                padding-right: 25px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+            .phone-contact {
+                visibility: hidden;
+                position: absolute;
+                right: 35vw;
+                background: $text-color-primary;
+                color: $text-color-tertiary;
+                text-shadow: 1px 1px 1px $bg-color-shadow;
+                border: 1px solid $bg-color-tertiary;
+                border-radius: 5px;
+                padding: 2px;
+                width: 200px;
+                height: 70px;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 2px;
+                opacity: 0.7;
+                animation: toggle;
+            }
+        }
+    }
+    .encomendar {
+        margin-top: 3rem;
+        width: 100%;
+        text-align: center;
+        .btn {
+            width: 100px;
+        }
+    }
+}

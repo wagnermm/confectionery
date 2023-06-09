@@ -1,0 +1,17 @@
+#about {
+    background-color: $bg-color-tertiary;
+    color: $text-color-tertiary;
+    padding: 2rem;
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        #about-info {
+            width: 70%;
+            h1, p {
+                color: $text-color-primary;
+            }
+        }
+    }
+}
